@@ -1,0 +1,273 @@
+/* Basic CSS for the navigation bar */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    padding: 0px 40px;
+    text-align: left;
+    color: white;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    width: 100%;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .navbar a:hover {
+    background-color: #575757;
+  }
+  
+  .nav-right input,
+  .nav-right button {
+    margin-left: 10px;
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+  
+  .nav-right input {
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .nav-right button {
+    border: none;
+    border-radius: 4px;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .nav-right button:hover {
+    background-color: #777;
+  }
+  
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 200px;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 7px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .contents {
+    max-width: 600px;
+    padding: 80px 40px;
+    text-align: left;
+    color: white;
+  }
+  
+  .contents h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .contents p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .about-us {
+    padding: 0px 40px;
+    text-align: left;
+    color: white;
+  }
+  
+  .about-us h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .our-team {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+    color: white; /* or black, depending on your background */
+  }
+  
+  .our-team h2 {
+    font-size: 36px;
+    margin: 0;
+    flex-basis: 20%; /* "Our Team" will take up 20% of the space */
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: space-between; /* Ensures the members are spaced evenly */
+    flex: 1; /* Takes up remaining space */
+  }
+  
+  .member {
+    background-color: rgba(255, 255, 255, 0.1); /* transparent card */
+    border-radius: 10px;
+    padding: 20px;
+    width: 180px;
+    text-align: center;
+  }
+  
+  .member img {
+    width: 100%;
+    border-radius: 50%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .member h3 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+  }
+  
+  .member p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  /* Container for the contact page content */
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - 60px); /* adjust height based on navbar */
+    padding: 0 60px;
+    color: white; /* or black depending on background */
+  }
+  
+  /* Left-side heading */
+  .contact-text h1 {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+  
+  /* Right-side form styling */
+  .contact-form {
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.1); /* optional background for contrast */
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .contact-form button {
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #555;
+  }
+
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 40px;
+  }
+  
+  .contents {
+    flex: 1;
+    color: white; /* Or black, depending on your background */
+  }
+  
+  .recommendations {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+  }
+  
+  .recommendation-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .recommendation-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  
